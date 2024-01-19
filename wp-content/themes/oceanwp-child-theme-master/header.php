@@ -63,7 +63,7 @@ $lien=get_field('lien_google_maps', 161);
 			<div class="popup-address">
 				<p><b>Le lieu</b></p>
 				<?php echo $lieu; ?>
-				<a class="popup-link" href="<?php echo $lien; ?>" target="_blank">Voir sur Google Maps</a>
+				<a class="popup-link" href="<?php echo $lieu; ?>" target="_blank">Voir sur Google Maps</a>
 			</div>
 			<div class="popup-address">
 				<p><b>La date</b></p>
@@ -94,7 +94,7 @@ $('.popup-close').click(function(){
 /**
  * Shortcode pour ajouter un bouton
  */
-function contact_btn() {
+/*function contact_btn() {
 
 	// Code du bouton
 	$string .= '<a href="/contact" class="contact-btn">Nous contacter</a>';
@@ -102,7 +102,7 @@ function contact_btn() {
 	// On retourne le code
 	return $string;
 
-}
+}*/
 // On publie le shortcode
 add_shortcode('contact', 'contact_btn');
 
